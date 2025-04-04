@@ -1,0 +1,83 @@
+Core JavaScript (Essential for Node.js)
+1.Data Types and Variables
+Primitive (string, number, boolean, null, undefined, symbol, bigint)
+Reference types (objects, arrays, functions)
+
+2.Control Structures
+Loops: for, while, do-while
+Conditional statements: if-else, switch
+Functions
+
+3.Function 
+declarations and expressions
+Arrow functions
+Callback functions
+
+4.Error Handling
+try-catch
+Custom error objects
+
+5.Promises and Async/Await
+Creating and handling promises
+Chaining promises
+Using async/await in test scripts
+
+6.Synchronous vs Asynchronous Programming
+Blocking vs Non-blocking code
+Event loop in JavaScript
+Callbacks, Promises, and Async/Await patterns
+
+7.Arrays
+Methods: push, pop, shift, unshift, splice, slice, filter, map, reduce, forEach, find, includes
+Iteration over arrays (for, for-of, forEach)
+
+8.Strings
+String manipulation methods: split, join, replace, substring, trim, toUpperCase, toLowerCase
+Template literals
+
+9.Objects
+Object creation and manipulation
+Methods: keys, values, entries
+Object destructuring and spread/rest operators
+
+10.JSON
+Parsing (JSON.parse) and stringifying (JSON.stringify)
+
+
+11.Core Modules
+fs (File System)
+path (Path operations)
+os (Operating system-related information)
+http and https (Creating HTTP servers or making requests)
+events (EventEmitter API)
+util (Utility functions)
+
+12.Asynchronous Programming in Node.js
+Callbacks in Node.js
+Streams and Buffers
+The event loop and its phases
+Handling async tasks with Promises and Async/Await
+
+13.NPM (Node Package Manager)
+Installing and managing dependencies
+Scripts in package.json
+
+14.Modules
+Import/export in ES6 modules
+CommonJS (require and module.exports)
+
+15.File System Operations
+Reading and writing files (fs.readFileSync, fs.writeFile, etc.)
+Working with directories
+
+16.Streams
+Readable and Writable streams
+pipe method
+
+17.Child Processes
+Running shell commands with child_process module
+Forking processes
+
+18.Error Handling in Node.js
+Managing exceptions with process.on('uncaughtException')
+Handling rejected promises

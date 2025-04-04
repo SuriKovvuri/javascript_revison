@@ -1,0 +1,112 @@
+/*
+1)What is promise?
+Promise is a eventual completion (or failures) of a asynchronous operation
+A promise is created using the Promise constructor. You pass a function (executor) with two arguments: resolve and reject.
+
+const myPromise = new Promise((resolve, reject) => {
+  const success = true; // Simulate some condition
+  if (success) {
+    resolve("Operation successful!");
+  } else {
+    reject("Operation failed.");
+  }
+});
+
+
+2)Handling a Promise:
+You can handle promises using the .then(), .catch(), and .finally() methods.
+myPromise
+  .then(result => {
+    console.log(result); // Runs if the promise resolves
+  })
+  .catch(error => {
+    console.error(error); // Runs if the promise rejects
+  })
+  .finally(() => {
+    console.log("Cleanup or final steps");
+  });
+
+
+3)Chaining Promises:
+You can chain multiple .then() methods if the next operation depends on the result of the previous one.
+
+myPromise
+  .then(result => {
+    console.log(result);
+    return "Next step data"; // Pass this to the next `.then`
+  })
+  .then(nextResult => {
+    console.log(nextResult);
+  })
+  .catch(error => {
+    console.error("Error in the chain:", error);
+  });
+
+4)Using async/await:
+async/await provides a more synchronous way of handling promises.
+
+async function handlePromise() {
+  try {
+    const result = await myPromise;
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  } finally {
+    console.log("Finished async handling");
+  }
+}
+
+handlePromise();
+Use Promise.all, Promise.allSettled, Promise.race, or Promise.any for working with multiple promises.
+
+Example of Promise.all:
+5)Combine Multiple Promises
+const promise1 = Promise.resolve(1);
+const promise2 = Promise.resolve(2);
+const promise3 = Promise.resolve(3);
+
+Promise.all([promise1, promise2, promise3])
+  .then(values => {
+    console.log(values); // [1, 2, 3]
+  })
+  .catch(error => {
+    console.error("One of the promises rejected:", error);
+  });
+*/
+
+
+
+/*
+1)Synchronous and Asynchronous
+What is synchronous programming in Node.js?
+What is asynchronous programming in Node.js?
+How does Node.js handle asynchronous operations?
+What are the differences between synchronous and asynchronous functions in Node.js?
+Can synchronous code block the Node.js event loop? Explain.
+
+2)Callbacks
+What is a callback function in Node.js?
+How are callbacks used in Node.js?
+What is callback hell, and how can it be avoided?
+How does Node.js handle errors in callback functions?
+How do you convert a callback-based function to a promise-based one?
+
+3)Promises
+What is a Promise in Node.js?
+How do Promises improve over callbacks in Node.js?
+What are the states of a Promise?
+How do you handle errors in Promises?
+What is Promise.all, Promise.race, and Promise.any? How are they used?
+
+4)Async/Await
+What is async/await in Node.js?
+How does async/await simplify working with Promises?
+How do you handle errors in async/await?
+Can you use async/await with non-Promise-based code? Why or why not?
+What happens when you don’t use await in an async function?
+
+5)Event Loop and Error Handling
+What is the role of the event loop in asynchronous programming?
+What are timers (setTimeout, setImmediate) in Node.js, and how do they work?
+How do you handle uncaught exceptions in asynchronous code?
+*/
